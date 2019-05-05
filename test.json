@@ -1,0 +1,57 @@
+{
+    "concepts": [
+        {
+            "id": "Concept1",
+            "name": "Concept1",
+            "position": {
+                "x": "10",
+                "y": "20"
+            }
+        },
+        {
+            "id": "Concept2",
+            "name": "Concept2",
+            "position": {
+                "x": "10",
+                "y": "60"
+            }
+        },
+        {
+            "id": "Concept3",
+            "name": "Concept3",
+            "position": {
+                "x": "320",
+                "y": "20"
+            }
+        },
+        {
+            "id": "Concept4",
+            "name": "Concept4",
+            "position": {
+                "x": "320",
+                "y": "60"
+            }
+        },
+        {
+            "id": "Concept5",
+            "name": "Concept5",
+            "position": {
+                "x": "640",
+                "y": "20"
+            }
+        },
+        {
+            "id": "Concept6",
+            "name": "Concept6",
+            "position": {
+                "x": "640",
+                "y": "60"
+            }
+        }
+    ],
+    "cognitiveCardLinks": [
+        {
+            
+        }
+    ]
+}
