@@ -18,7 +18,7 @@ export default class CognitiveCardClass {
                 rawFile.onerror = () => reject(rawFile);
     
                 rawFile.send(null);
-            }, 3000);
+            }, 1000);
         });
     }
 }

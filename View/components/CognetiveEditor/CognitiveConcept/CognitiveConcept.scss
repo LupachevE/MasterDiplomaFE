@@ -1,13 +1,11 @@
 .concept {
-    position: absolute;
-    max-width: 300px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    & p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100px;
+    stroke: black;
+    stroke-width: 2;
+    fill: white;
+    & text {
         user-select: none;
+        stroke-width: 1;
+        fill: black;
+        font-family: monospace;
     }
 }

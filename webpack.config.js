@@ -33,7 +33,7 @@ module.exports = {
       template: "./index.html"
     }),
     new CopyWebpackPlugin([{
-      from: 'View/assets/images',
+      from: 'assets/images',
       to: 'dist/assets/images'
     }])
   ]

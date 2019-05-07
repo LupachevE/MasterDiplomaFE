@@ -4,7 +4,7 @@
             "id": "Concept1",
             "name": "Concept1",
             "position": {
-                "x": "10",
+                "x": "160",
                 "y": "20"
             }
         },
@@ -13,30 +13,30 @@
             "name": "Concept2",
             "position": {
                 "x": "10",
-                "y": "60"
+                "y": "160"
             }
         },
         {
             "id": "Concept3",
             "name": "Concept3",
             "position": {
-                "x": "320",
-                "y": "20"
+                "x": "160",
+                "y": "300"
             }
         },
         {
             "id": "Concept4",
             "name": "Concept4",
             "position": {
-                "x": "320",
-                "y": "60"
+                "x": "640",
+                "y": "160"
             }
         },
         {
             "id": "Concept5",
             "name": "Concept5",
             "position": {
-                "x": "640",
+                "x": "480",
                 "y": "20"
             }
         },
@@ -44,14 +44,61 @@
             "id": "Concept6",
             "name": "Concept6",
             "position": {
-                "x": "640",
-                "y": "60"
+                "x": "480",
+                "y": "300"
             }
         }
     ],
     "cognitiveCardLinks": [
         {
-            
+            "sourceConcept": "Concept1",
+            "destinationConcept": "Concept2",
+            "connectionWeight": "0.4"
+        },
+        {
+            "sourceConcept": "Concept2",
+            "destinationConcept": "Concept3",
+            "connectionWeight": "0.5"
+        },
+        {
+            "sourceConcept": "Concept4",
+            "destinationConcept": "Concept1",
+            "connectionWeight": "-0.4"
+        },
+        {
+            "sourceConcept": "Concept1",
+            "destinationConcept": "Concept3",
+            "connectionWeight": "0.9"
+        },
+        {
+            "sourceConcept": "Concept3",
+            "destinationConcept": "Concept2",
+            "connectionWeight": "0.7"
+        },
+        {
+            "sourceConcept": "Concept5",
+            "destinationConcept": "Concept4",
+            "connectionWeight": "-0.3"
+        },
+        {
+            "sourceConcept": "Concept5",
+            "destinationConcept": "Concept2",
+            "connectionWeight": "0.1"
+        },
+        {
+            "sourceConcept": "Concept6",
+            "destinationConcept": "Concept3",
+            "connectionWeight": "-0.5"
+        },
+        {
+            "sourceConcept": "Concept6",
+            "destinationConcept": "Concept5",
+            "connectionWeight": "0.5"
+        },
+        {
+            "sourceConcept": "Concept6",
+            "destinationConcept": "Concept1",
+            "connectionWeight": "-0.9"
         }
     ]
 }
