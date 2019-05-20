@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot --host 0.0.0.0",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -19,9 +19,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-async-to-generator": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-polyfill": "^6.26.0",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",

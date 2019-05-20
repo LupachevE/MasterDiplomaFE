@@ -18,11 +18,16 @@ export default class CognetiveEditorContainer extends Component {
 
     componentDidMount() {
         const Card = new CognitiveCardClass();
-        Card.getDate().then(() => {
-            this.setState({
-                isLoaded: true,
-                cardData: Card.data
-            });
+        Card.getDate().then(res => {
+            Card.data = res;
+
+            const self = this;
+            setTimeout(function () {
+                self.setState({
+                    isLoaded: true,
+                    cardData: res
+                });
+            }, 500);
         },
         error => {
             this.setState({

@@ -4,10 +4,19 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: "./index.js",
+  entry: ["babel-polyfill", "./index.js"],
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js"
+  },
+  devServer: {
+    open: true,
+    host: '0.0.0.0',
+    proxy: {
+      '/api/*': {
+        target: 'http://localhost:65294'
+      }
+    }
   },
   module: {
     rules: [
