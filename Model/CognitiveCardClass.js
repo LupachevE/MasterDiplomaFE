@@ -3,11 +3,14 @@ export default class CognitiveCardClass {
         this.data = null;
     }
 
-    async getDate() {
+    async getCardData(id) {
         let result = $.ajax({  
-            url: '/api/default',  
+            url: '/api/card',  
             type: 'GET',  
-            dataType: 'json',  
+            dataType: 'json',
+            data: {
+                'id': id
+            }
         });
 
         return result;

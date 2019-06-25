@@ -1,4 +1,148 @@
+html {
+    height: 97%;
+}
+body {
+    height: 100%;
+}
+#root {
+    height: 100%;
+    & * {
+        font-family: monospace;
+        user-select: none;
+    }
+}
 h1 {
-    color: #27aedb;
+    color: cornflowerblue;
     text-align: center;
+}
+.main {
+    border: 3px solid cornflowerblue;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+}
+.tab {
+    width: 100%;
+}
+.mainNavigation {
+    flex-basis: 20%;
+    display: grid;
+    height: 100%;
+    -webkit-box-shadow: 2px 0px 5px 0px rgba(112,112,112,1);
+    -moz-box-shadow: 2px 0px 5px 0px rgba(112,112,112,1);
+    box-shadow: 2px 0px 5px 0px rgba(112,112,112,1);
+}
+.mainNavigation button, .viewNavigation button {
+    font-family: monospace;
+    font-size: 20px;
+    border: 2px solid cornflowerblue;
+    background-color: white;
+    color: cornflowerblue;
+    transition: background-color .2s linear, border-color .2s linear;
+    cursor: pointer;
+    &:hover:not(.active) {
+        background-color: gray;
+        border: 2px solid gray;
+        color: white;
+    }
+    &.active {
+        background-color: cornflowerblue;
+        color: white;
+    }
+}
+.viewNavigation {
+    text-align: center;
+    & button {
+        padding: 10px;
+    }
+}
+.modelNavigation {
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    width: 50px;
+    display: grid;
+    & button {
+        width: 50px;
+        height: 50px;
+        border: 2px solid cornflowerblue;
+        transition: background-color .2s linear, border-color .2s linear;
+        border: 2px solid cornflowerblue;
+        background: white;
+        margin: 5px 0;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    & .link {
+        background-image: url('/assets/images/left-arrow.svg');
+        &:hover {
+            background-image: url('/assets/images/left-arrow_hover.svg');
+            background-color: grey;
+            border: 2px solid gray;
+        }
+    }
+    & .add {
+        background-image: url('/assets/images/add.svg');
+        &:hover {
+            background-image: url('/assets/images/add_hover.svg');
+            background-color: grey;
+            border: 2px solid gray;
+        }
+    }
+    & .refresh {
+        background-image: url('/assets/images/refresh-button.svg');
+        &:hover {
+            background-image: url('/assets/images/refresh-button_hover.svg');
+            background-color: grey;
+            border: 2px solid gray;
+        }
+    }
+}
+
+.tableView, .structView {
+    display: flex;
+    & table {
+        width: 100%;
+        min-height: 600px;
+        margin: 10px 60px 5px 10px;
+        border: 2px solid cornflowerblue;
+        border-collapse: collapse;
+        font-size: 14px;
+        & td, th {
+            border: 2px solid cornflowerblue;
+            text-align: center;
+            padding: 5px;
+        }
+        & th.active {
+            background-color: grey;
+            color: white;
+        }
+    }
+}
+
+.loadContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.graghView {
+    height: calc(100% - 150px);
+    width: calc(100% - 50px);
+    & svg {
+        height: 100%;
+        width: 100%;
+        & text {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+    }
 }
